@@ -7,8 +7,8 @@ development:
   username: postgres
   password: postgres
 
-# production:
-#  <<: *default
-#  database: my_aws_app
-#  username: postgres
-#  password: i@_ms_!  
+production:
+ <<: *default
+ database: my_aws_app
+ username: postgres
+ password: postgres
