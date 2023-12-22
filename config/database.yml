@@ -9,6 +9,9 @@ development:
 
 production:
  <<: *default
- database: my_aws_app
- username: postgres
- password: postgres
+  adapter: postgresql
+  encoding: unicode
+  database: my_aws_app
+  host: localhost
+  username: postgres
+  password: postgres
