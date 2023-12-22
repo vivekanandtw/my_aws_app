@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+100.times do |t|
+	if Article.all.count > 100 && Article.all.count < 125
+		Article.create(
+			name: Faker::Name.name,
+			description: Faker::Markdown.emphasis, 
+			status: "Pending", 
+			published: true,
+			publish_date: Date.today + 2
+		)
+	end
+end
